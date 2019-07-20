@@ -1,4 +1,5 @@
 import React from 'react';
+import { bool, func, number } from 'prop-types'
 import { connect } from 'react-redux';
 import Form from './Form';
 import Modal from '../components/Modal';
@@ -9,6 +10,12 @@ const App = ({ result, loading, onReset }) => {
     <Form loading={loading} />
     {result && <Modal content={result} onClose={onReset}/>}
 </>
+}
+
+App.propTypes = {
+    result: number,
+    loading: bool,
+    onReset: func
 }
 
 const mapState = state => state;

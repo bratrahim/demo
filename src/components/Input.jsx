@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { string, } from 'prop-types'
 import { idGen } from './../helpers.js';
 import styles from './Input.scss';
 
@@ -13,6 +14,11 @@ const Input = ({label, message, ...props}) => {
             {message && <p className={styles.message}>{message}</p>}
         </div>
     )
+}
+
+Input.propTypes = {
+    label: string,
+    message: string
 }
 
 export default Input;
