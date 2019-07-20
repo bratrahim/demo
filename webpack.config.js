@@ -5,7 +5,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const server = 'http://localhost:3000';
 
 module.exports = (env, args) => ({
-    entry: './src/index.js',
+    entry: ['babel-polyfill', './src/index.js'],
     module: {
         rules: [
             {
