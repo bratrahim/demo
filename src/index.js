@@ -5,7 +5,7 @@ import { createStore, applyMiddleware } from 'redux';
 import thunk from 'redux-thunk';
 
 import App from './containers/App';
-import { reducer, initialState } from './stateFunc.js';
+import { reducer, initialState } from './stateManagement';
 import 'normalize.css';
 import './stylesheets/App.scss';
 

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { connect } from 'react-redux';
-import { getData } from './../stateFunc.js';
+import { getData } from './../stateManagement.js';
 import Input from './../components/Input';
 import Button from './../components/Button';
 import styles from './Form.scss';7
